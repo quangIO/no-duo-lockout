@@ -1,5 +1,7 @@
 # How to use
 
+* [Download the binary](https://github.com/quangIO/no-duo-lockout/releases/)
+  or compile it your self
 * Audit the code, reverse the binary (seriously, don't just trust me)
 * Go to the website that manages 2FA
   * e.g. not-start-portal, not-some-university portals
@@ -29,14 +31,15 @@
 
 # Is this secure?
 
-No. Just like the Duo App. (you should not use the browser extension by the way; but if you do remember to set the password or encrypt it)
+No. Just like the Duo App (you should not use the browser extension by
+the way; but if you do, set the password and/or encrypt sensitive data)
 
 # Alternative (preferred) methods
 
-Duo allows using FIDO devices to authenticate (that is actually more
-secure than using phones tbh). It also supports TouchID (only Apple and Chrome).
-However, ~~i am broke~~ another solution supporting all platforms is using a
-u2f emulation -> add u2f devices to Duo
+Duo allows using FIDO devices for 2FA (that is actually more secure than
+using phones tbh). It also supports TouchID (only Apple and Chrome).
+However, ~~i am broke~~ another solution supporting all platforms is
+using a u2f emulation -> add u2f devices to Duo
 
 * Linux: https://github.com/danstiner/rust-u2f (remember to set udev rules depending on your distro)
 * Win: https://github.com/SoftU2F/SoftU2F-Win
