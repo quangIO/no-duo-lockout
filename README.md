@@ -5,8 +5,8 @@
 * Audit the code, reverse the binary (seriously, don't just trust me)
 * Go to the website that manages 2FA
   * e.g. not-start-portal, not-some-university portals
-* Add a new phone (or reactivate Duo...)
-  * Input your phone number and those kinds of stuff
+* Add a new tablet
+
   * Just choose Android (you are gonna use different 2FA client anyway)
   * Do not use the QR code. Choose the option which sends the activation
     link to your email (don't open the link on your phone with Duo
@@ -21,13 +21,13 @@
   * Wait
   * Click continue on the web page (it should be enabled if everything
     so far is correct)
-  * Copy the hopt secret and use it with whatever authenticator you
+  * Copy the secret key and use it with whatever authenticator you
     want. (Note: Duo uses *counter based* hopt)
     * Example: you can use
       [this extension](https://github.com/Authenticator-Extension/Authenticator)
       in browser
       * Edit -> Manual Entry
-      * Counter based; name = any thing; secret is the hopt secret
+      * Counter based; name = any thing; secret is the hotp secret
         you get from the app
       * Done. You can get your passcode right in your browser
 
@@ -48,3 +48,7 @@ using an u2f emulation -> add u2f devices to Duo
 * Mac: https://github.com/github/SoftU2F
 
 [![Donate](https://img.shields.io/badge/Donate-PayPal-green.svg)](https://www.paypal.com/cgi-bin/webscr?cmd=_s-xclick&hosted_button_id=C44YKYMVNL4TA)
+
+# Technical details
+
+This request is constructed by capturing all packets sent from Duo Mobile app. NYU Duo 2FA uses hotp, counter based, and Sha1 hash function.
