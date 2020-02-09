@@ -50,4 +50,4 @@ using an u2f emulation -> add u2f devices to Duo
 
 # Technical details
 
-This request is constructed by capturing all packets sent from Duo Mobile app. NYU Duo 2FA uses hotp, counter based, and Sha1 hash function.
+This request is constructed without any reverse engineering involved. NYU Duo 2FA uses hotp, counter based, and Sha1 hash function.
