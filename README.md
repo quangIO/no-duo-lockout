@@ -21,7 +21,7 @@
   * Click continue on the web page (it should be enabled if everything
     so far is correct)
   * Copy the secret key and use it with whatever authenticator you
-    want. (Note: Duo uses *counter based* hopt)
+    want. (Note: Duo uses *counter based* hotp)
     * Example: you can use
       [this extension](https://github.com/Authenticator-Extension/Authenticator)
       in browser
@@ -50,4 +50,4 @@ using an u2f emulation -> add u2f devices to Duo
 
 # Technical details
 
-This request is constructed without any reverse engineering involved. NYU Duo 2FA uses hotp, counter based, and Sha1 hash function.
+The post request is constructed without any reverse engineering involved. NYU Duo 2FA uses hotp, counter based, and Sha1 hash function.
