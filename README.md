@@ -6,9 +6,8 @@
 * Go to the website that manages 2FA
   * e.g. not-start-portal, not-some-university portals
 * Add a new tablet
-
-  * Just choose Android (you are gonna use different 2FA client anyway)
-  * Do not use the QR code. Choose the option which sends the activation
+  * Just choose Android (you are gonna use a different 2FA client anyway)
+  * Do not scan the QR code. Choose the option which sends the activation
     link to your email (don't open the link on your phone with Duo
     installed either)
   * The continue button is disabled, for now
